@@ -1,7 +1,6 @@
 import React from 'react'
 import Blog from './components/Blog'
 import Contact from './components/Contact'
-import Footer from './components/Footer'
 import Home from './components/Home'
 import Milestones from './components/Milestones'
 import Portfolio from './components/Portfolio'
@@ -24,8 +23,7 @@ const App = () => {
  <Pricing/>
  <Testimonil/>
  <Skill/>
- <Contact/>
- <Footer/>
+ <Contact
  </>
   )
 }
