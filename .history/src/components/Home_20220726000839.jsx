@@ -11,10 +11,8 @@ const Home = () => {
   )
 }
 const Section=styled.section`
-background: url(${home}) no-repeat center;
-min-height:100vh;
-background-size:cover;
-position:relative;
+background: url(${home});
+min-height:100
 
 `;
 

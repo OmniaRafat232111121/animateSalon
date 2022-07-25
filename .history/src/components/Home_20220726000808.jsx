@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
-import home from "../assets/home.png";
+import Home from "../assets/home.png";
 import Play from "../assets/play.png";
 import Navbar from './Navbar';
 const Home = () => {
@@ -11,11 +11,7 @@ const Home = () => {
   )
 }
 const Section=styled.section`
-background: url(${home}) no-repeat center;
-min-height:100vh;
-background-size:cover;
-position:relative;
-
+background: url(${home})
 `;
 
 export default Home
