@@ -6,7 +6,7 @@ import Navbar from './Navbar';
 
 const Home = () => {
   return (
-  <Section id="home">
+    <Section id="home">
     <Navbar/>
     <div className="home">
     <div className="content">
@@ -59,48 +59,47 @@ const Home = () => {
   )
 }
 const Section=styled.section`
-  background: url(${home}) no-repeat center;
-  min-height: 100vh;
-  background-size: cover;
-  position: relative;
-  .home{
-    height: 100%;
-    .content {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      width: 60%;
-      color: #fff;
-      gap: 1.2rem;
-      margin-top: 8rem;
-      padding-left: 18rem;
-      .title {
-        h1 {
-          font-size: 5rem;
-          line-height: 5.3rem;
-        }
-      }
-      .subTitle {
-        p {
-          width: 70%;
-          margin-bottom: 2rem;
-        }
+background: url(${home}) no-repeat center;
+min-height:100vh;
+background-size:cover;
+position:relative;
+.home{
+  height:100%;
+  .content{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    width:60%;
+    color:#fff;
+    gap:1.2rem;
+    margin-top:8rem;
+    padding-left:18rem;
+    .title{
+      h1{
+        font-size:5rem;
+        line-height:5.3rem;
       }
     }
-  }
-  .info {
-    position: absolute;
-    bottom: -6rem;
-    right: 0;
+    .subTitle{
+      p{
+        width:70%;
+        margin-bottom:2rem;
+      }
+    }
+  .info{
+    position:absolute;
+    bottom:-6rem;
+    right:0;
     background-color: var(--secondary-color);
-    padding: 4rem;
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 5rem;
-      color: #fff;
+    padding:4rem;
+    .grid{
+      display:grid;
+      grid-template-columns
     }
+
   }
+  }
+}
 `;
 
 export default Home

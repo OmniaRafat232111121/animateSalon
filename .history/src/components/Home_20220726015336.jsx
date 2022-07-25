@@ -97,7 +97,7 @@ const Section=styled.section`
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 5rem;
+      gap: 4rem;
       color: #fff;
     }
   }

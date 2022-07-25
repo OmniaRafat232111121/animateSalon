@@ -96,7 +96,7 @@ const Section=styled.section`
     padding: 4rem;
     .grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 5rem;
       color: #fff;
     }

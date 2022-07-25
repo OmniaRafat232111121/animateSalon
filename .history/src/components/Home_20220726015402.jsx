@@ -96,8 +96,8 @@ const Section=styled.section`
     padding: 4rem;
     .grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 5rem;
+      grid-template-columns: repeat(, 1fr);
+      gap: 4rem;
       color: #fff;
     }
   }

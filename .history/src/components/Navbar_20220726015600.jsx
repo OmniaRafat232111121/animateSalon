@@ -70,10 +70,7 @@ const Nav = styled.nav`
           font-size: 0.9rem;
           text-transform: uppercase;
         }
-        a:hover{
-          color:var(--secondary-color);
-          border-bottom:0.2rem solid #fff;
-        }
+        
       }
     }
   }

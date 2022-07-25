@@ -72,7 +72,6 @@ const Nav = styled.nav`
         }
         a:hover{
           color:var(--secondary-color);
-          border-bottom:0.2rem solid #fff;
         }
       }
     }
