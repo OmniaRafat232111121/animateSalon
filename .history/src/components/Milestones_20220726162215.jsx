@@ -95,7 +95,7 @@ height:100%;
     grid-template-columns: 1fr;
     gap: 5rem;
     .milestone{
-    display:grid;
+      display:grid;
     grid-template-columns:repeat(1,1fr);
     margin:30px;
     align-items:center;

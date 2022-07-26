@@ -72,37 +72,9 @@ height:100%;
   gap: 2rem;
   p{
     font-size:5rem;
-    font-weight:bolder;
-    line-height:3rem;
-  }
-  span{
-    text-transform:uppercase;
-    color:#ffff;
-  }
-  .img{
-    height:10rem;
+    font
   }
  }
  }
-@media screen and(min-width:280px) and (max-width:1080px) {
-  padding:5rem 2rem;
-  height:100%;
-  min-height:100ch;
-  .background{
-    display:none;
-  } 
-  .milestones {
-    grid-template-columns: 1fr;
-    gap: 5rem;
-    .milestone{
-    display:grid;
-    grid-template-columns:repeat(1,1fr);
-    margin:30px;
-    align-items:center;
-    }
-  }
-
-  
-}
 `;
 export default Milestones

@@ -84,25 +84,6 @@ height:100%;
   }
  }
  }
-@media screen and(min-width:280px) and (max-width:1080px) {
-  padding:5rem 2rem;
-  height:100%;
-  min-height:100ch;
-  .background{
-    display:none;
-  } 
-  .milestones {
-    grid-template-columns: 1fr;
-    gap: 5rem;
-    .milestone{
-    display:grid;
-    grid-template-columns:repeat(1,1fr);
-    margin:30px;
-    align-items:center;
-    }
-  }
-
-  
-}
+@md
 `;
 export default Milestones
