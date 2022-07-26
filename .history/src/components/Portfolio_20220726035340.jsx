@@ -16,7 +16,7 @@ import { portfolioAnimations } from "animation";
 function Portfolio() {
   
   return (
-    <Section id="portfolio" >
+    <ection id="portfolio" >
     <div className="grid">
        
     </div>
@@ -24,7 +24,7 @@ function Portfolio() {
         <span>Load More</span>
         <img src={loadmore} alt="Load More" />
     </div>
-  </Section>
+  </ection>
   )
 }
 const Section=styled.section `

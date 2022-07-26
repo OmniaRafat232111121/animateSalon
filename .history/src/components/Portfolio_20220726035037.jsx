@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import loadmore from "../assets/loadmore.png";
+import loadmore from "assets/loadmore.png";
 import portfolio3 from "../assets/portfolio3.jpg";
 import portfolio4 from "../assets/portfolio4.jpg";
 import portfolio5 from "../assets/portfolio5.jpg";
@@ -10,13 +10,13 @@ import portfolio8 from "../assets/portfolio8.jpg";
 import portfolio9 from "../assets/portfolio9.jpg";
 import portfolio10 from "../assets/portfolio10.jpg";
 import { motion } from "framer-motion";
-
+import { useScroll } from "./useScroll";
 import { portfolioAnimations } from "animation";
 
 function Portfolio() {
-  
+  const [element, controls] = useScroll();
   return (
-    <Section id="portfolio" >
+    <section id="portfolio" ref={element}>
     <div className="grid">
        
     </div>
@@ -24,9 +24,8 @@ function Portfolio() {
         <span>Load More</span>
         <img src={loadmore} alt="Load More" />
     </div>
-  </Section>
+  </section>
   )
 }
-const Section=styled.section `
-`;
+
 export default Portfolio
