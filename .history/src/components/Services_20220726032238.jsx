@@ -59,15 +59,14 @@ const Services = () => {
 
 
 const Section = styled.section`
-min-height: 100vh;
-.services {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  height: 100%;
-  margin: 0 14rem;
-  margin-top: 10rem;
-  gap: 5rem;
+min-height:100vh;
+.services{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:5rem;
+  align-items:center;
+  height:100%;
+  margin:0 14rem;
   &__service{
     padding:2rem;
     &:nth-of-type(2){
@@ -109,8 +108,10 @@ min-height: 100vh;
     gap: 2rem;
     padding: 0 2rem;
   }
-
+}
   }
+
+}
 `;
 
 export default Services
