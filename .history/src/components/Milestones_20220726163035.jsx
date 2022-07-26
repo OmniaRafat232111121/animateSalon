@@ -93,7 +93,7 @@ position: relative;
   }
   .milestones {
     grid-template-columns: 1fr;
-    gap: 7rem;
+    gap: rem;
   }
 }
 `;

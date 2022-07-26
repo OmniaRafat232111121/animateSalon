@@ -93,10 +93,10 @@ position: relative;
   }
   .milestones {
     grid-template-columns: 1fr;
-    gap: 7rem;
+    gap: 5rem;
   }
 }
 `;
 
 
-export default Milestones;
+export default Milestones
