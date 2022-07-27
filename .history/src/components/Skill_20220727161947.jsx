@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import Title from './Title';
 import { motion } from "framer-motion";
-import { useScroll } from "./useScroll";
+import { useScroll } from "./";
 import { skillsBarAnimation } from "../animation";
 function Skill() {
   const [element, controls] = useScroll();

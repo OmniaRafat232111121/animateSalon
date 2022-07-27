@@ -10,7 +10,7 @@ import Services from './components/Services'
 import Skill from './components/Skill'
 import Testimonil from './components/Testimonil'
 import Footer from './components/Footer'
-// import Viedo from './components/Viedo'
+import Viedo from './components/Viedo'
 const App = () => {
   return (
  <>
@@ -20,7 +20,7 @@ const App = () => {
  <Portfolio/>
  <Milestones/>
  <Blog/>
-
+//  <Viedo/>
  <Pricing/>
  <Testimonil/>
  <Skill/>

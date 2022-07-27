@@ -20,7 +20,7 @@ const App = () => {
  <Portfolio/>
  <Milestones/>
  <Blog/>
-
+//  <Viedo/>
  <Pricing/>
  <Testimonil/>
  <Skill/>

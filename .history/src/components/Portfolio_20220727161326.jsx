@@ -11,7 +11,7 @@ import portfolio9 from "../assets/portfolio9.jpg";
 import portfolio10 from "../assets/portfolio10.jpg";
 import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
-import { portfolioAnimations } from "../animation";
+import { portfolioAnimations } from "../animationanimation";
 
 function Portfolio() {
   const [element, controls] = useScroll();

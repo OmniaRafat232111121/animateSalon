@@ -2,9 +2,11 @@ import React from 'react';
 import styled from "styled-components";
 import Title from './Title';
 import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
-import { skillsBarAnimation } from "../animation";
-function Skill() {
+import { skillsBarAnimation } from "animation";
+
+function Skills() {
   const [element, controls] = useScroll();
   const skillsData = [
     {
@@ -74,7 +76,7 @@ function Skill() {
   )
 }
 
-
+const Section
 const Section = styled.section`
 min-height: 100vh;
   height: 140vh;

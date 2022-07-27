@@ -5,7 +5,7 @@ import service2 from "../assets/service2.png"
 import service3 from "../assets/service3.png"
 import play from '../assets/play.png'
 import Title from './Title'
-import { useScroll } from "./useScroll";
+import { useScroll } from "./";
 import { motion } from "framer-motion";
 import { servicesAnimations } from "../animation";
 

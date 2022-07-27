@@ -6,7 +6,7 @@ import milestoneBackground from "../assets/milestone-background.png";
 import styled from "styled-components";
 import { useScroll } from "./useScroll";
 import { motion } from "framer-motion";
-import { milestonesAnimations } from "../animation";
+import { milestonesAnimations } from "..animation";
 function Milestones() {
   const [element, controls] = useScroll();
 

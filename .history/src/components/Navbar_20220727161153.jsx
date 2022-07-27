@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import logo from "../assets/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
-import { useScroll } from "./useScroll";
+import { useScroll } from "components/useScroll";
+import { useScroll } from "components/useScroll";
 import { motion } from "framer-motion";
 import { navAnimation } from "../animation";
 
