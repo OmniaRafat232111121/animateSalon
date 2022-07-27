@@ -1,46 +1,66 @@
 import React,{useState} from 'react';
 import styled from 'styled-components';
 import logo from "../assets/logo.png";
-import { GitHamBurgerMenu } from 'react-icons/gi'
+import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 
-const Navbar = () => {
-const {isNavOpen,setIsNavOpen}=useState(false);
-  return (
-    <Nav>
+import { useScroll } from "components/useScroll";
+import { motion } from "framer-motion";
+import { navAnimation } from "animation";
+
+
+function Navbar() {
+  const [isNavOpen,setIsNavOpen] = useState(false);
+  const [element, controls] = useScroll();
+  return <Nav ref={element}
+  variants={navAnimation}
+  transition={{ delay: 0.1 }}
+  animate={controls} 
+  state={isNavOpen ? 1 : 0}
+  >
     <div className="brand__container">
-    <a href="#" className='brand'>
-      <img src={logo} alt="logo" />
-    </a>  
+      <a href="#" className='brand'>
+        <img src={logo} alt="logo" />
+      </a>  
+      <div className="toggle">
+        {isNavOpen ? (
+          <MdClose onClick={ () => setIsNavOpen(false)} />
+        ) : (
+          <GiHamburgerMenu
+            onClick={ (e) => {
+              e.stopPropagation();
+              setIsNavOpen(true);
+            }}
+            />
+        )}
+      </div>
     </div>
-    <div className="toggle"></div>
-     
- <div className="links">
- <ul>
- <li className="active">
-     <a href="#home">Home</a>
-   </li>
-   <li>
-     <a href="#services">Services</a>
-   </li>
-   <li>
-     <a href="#portfolio">Portfolio</a>
-   </li>
-   <li>
-     <a href="#blog">Blog</a>
-   </li>
-   <li>
-     <a href="#skills">Skills</a>
-   </li>
-   <li>
-     <a href="#contact">Contact</a>
-   </li>
- </ul>
- </div>
-</Nav>
-  )
+    <div className={`links ${isNavOpen ? "show" : ""}`}>
+    <ul>
+        <li className="active">
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#blog">Blog</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+    </div>
+  </Nav>
 }
-const Nav = styled.nav`
+
+const Nav = styled(motion.nav)`
   display: flex;
   justify-content: space-between;
   margin: 0 2rem;
@@ -69,10 +89,6 @@ const Nav = styled.nav`
           font-weight: 400;
           font-size: 0.9rem;
           text-transform: uppercase;
-        }
-        a:hover{
-          color:var(--secondary-color);
-          border-bottom:0.2rem solid #fff;
         }
       }
     }

@@ -1,0 +1,7 @@
+{
+    "compilerOption":{
+        "baseUrl":"src"
+    },
+    "include":["src"]
+    "parser": "@babel/eslint-parser"
+}
